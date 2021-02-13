@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inserimento dati cliente</title>
+</head>
+<body>
+<form action="ClientServ" method="get">
+    <fieldset>
+        <legend>Dati anagrafici</legend>
+        <label for="nome">Nome:</label><br />
+      
+        <input type="text" name="nome" /> </br>
+        
+        <label for="cognome">Cognome:</label><br />
+        <input type="text" name="cognome"/> </br>
+
+        <label for="numero">Numero:</label><br />
+        <input type="text" name="numero"/> </br>
+
+<input type="hidden" name="tipo" value="insert"/>
+</br>
+<input type="submit" value="Inserisci">
+</fieldset>
+
+
+</form>
+
+<form action="ClientServ" method="get">
+
+<input type="hidden" name="tipo" value="findByAll"/>
+</br>
+<input type="submit" value="Visualizza Clienti">
+</form>
+</br>
+<a href="Home.html">Torna alla Home</a>
+</body>
+</html>

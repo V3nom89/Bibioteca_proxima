@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifica</title>
+</head>
+<body>
+   
+    <form action="ClientServ" method="get">
+
+        <fieldset>
+            <legend>Dati anagrafici</legend>
+             <label for="id">Id:</label><br />
+          
+            <input type="text" name="id" /> </br>
+            
+            <label for="nome">Nome:</label><br />
+          
+            <input type="text" name="nome" /> </br>
+            
+            <label for="cognome">Cognome:</label><br />
+            <input type="text" name="cognome"/> </br>
+    
+            <label for="numero">Numero:</label><br />
+            <input type="text" name="numero"/> </br>
+    
+    <input type="hidden" name="tipo" value="update"/>
+    </br>
+    <input type="submit" value="modifica">
+    </fieldset>
+    </form>
+</body>
+</html>

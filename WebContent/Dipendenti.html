@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Inserimento dati dipendente</title>
+</head>
+<body>
+
+<form action="DipendentiServ" method="get">
+    <fieldset>
+        <legend>Dati anagrafici</legend>
+        <label for="nome">Nome:</label><br />
+    <input type="text" name="nome" /> </br>
+    <label for="nome">Cognome:</label><br />
+    <input type="text" name="cognome"/> </br>
+    <label for="nome">Matricola:</label><br />
+    <input type="text" name="matricola" /> </br>
+    <label for="nome">Flag_Admin:</label><br />
+    <input type="text" name="flag_admin"/> </br>
+
+<input type="hidden" name="tipo" value="insert"/>
+    </br>
+<input type="submit" value="Inserisci">
+
+
+</fieldset>
+</form>
+<form action="DipendentiServ" method="get">
+
+    <input type="hidden" name="tipo" value="findByAll"/>
+    </br>
+    <input type="submit" value="Visualizza Dipendenti">
+    </form>
+    </br>
+    <a href="Home.html">Torna alla Home</a>
+    
+</body>
+</html>
